@@ -1,4 +1,3 @@
-cs147-pharmville
+CS147 Project (Fall 2012)
 ================
-
-Repository for CS147 project
+This is the main repository for the CS147 project.
