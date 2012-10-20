@@ -16,6 +16,12 @@
 	$mysql_database = 'c_cs147_rogchen';
 
 	// Opens connection to the mySQL server. Throws error if connection failed with message.
-	$mysqli = mysqli_connect($mysql_server, $mysql_user, $mysql_pass) or die(mysql_error());
+    $mysqli = mysqli_connect($mysql_server, $mysql_user, $mysql_pass, $mysql_database);
+
+    // Throw error with failed connection
+    if (mysqli_connect_errno()) {
+        printf("Connect failed: %s\n", mysqli_connect_error());
+        exit();
+    }
 
 ?>	
