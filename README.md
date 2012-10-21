@@ -23,6 +23,8 @@ Framework of application (in-progress)
 Random Tools
 ----------------
 * /iPhoneApp - this directory contains an XCode project that is set up to load a UIWebView that is pointing to the location of our mobile application (currently http://corgiland.com/cs147). Running the application will launch an iPhone simulator that is prepped for the web application already, so you can see how this will look on the phone without the status bar and other browser stuff getting in the way. Can't push it to a physical device though :|
+* Glyphish (http://www.glyphish.com/) - nice icons that work nicely with mobile applications
+* Subtle Patterns (http://subtlepatterns.com/) - nice backgrounds to make life less monochromatic
 
 Tips and guidelines
 ----------------
