@@ -20,6 +20,10 @@ Framework of application (in-progress)
 * /js - Javascript dependencies cached locally
 * config.php - DB connection information
 
+Random Tools
+----------------
+* /iPhoneApp - this directory contains an XCode project that is set up to load a UIWebView that is pointing to the location of our mobile application (currently http://corgiland.com/cs147). Running the application will launch an iPhone simulator that is prepped for the web application already, so you can see how this will look on the phone without the status bar and other browser stuff getting in the way. Can't push it to a physical device though :|
+
 Tips and guidelines
 ----------------
 * Be sure to put things in the proper locations. This will make life a lot easier in the long run where things are easier to clean up.
