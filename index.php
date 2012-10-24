@@ -2,6 +2,7 @@
     include_once('header.php');
 ?>
 
+<html>
 <div class="foo">
     <?
         $result = $mysqli->query("SELECT * FROM books");
@@ -20,3 +21,4 @@
         <? }
     ?>
 </div>
+</html>
