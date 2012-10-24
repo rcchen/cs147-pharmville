@@ -2,6 +2,7 @@
     <? include_once('config.php'); ?>
     <link rel="stylesheet" type="text/css" href="css/cssreset-min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/zepto.min.js"></script>
 </head>
 
