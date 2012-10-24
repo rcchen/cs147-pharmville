@@ -10,7 +10,7 @@
 	 */
 
 	// Information for connecting to the mySQL server
-	$mysql_server = 'localhost';
+	$mysql_server = 'mysteries.stanford.edu';
 	$mysql_user = 'ccs147rogchen';
 	$mysql_pass = 'Asdf123$';
 	$mysql_database = 'c_cs147_rogchen';
