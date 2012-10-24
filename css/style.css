@@ -53,22 +53,23 @@ h1 {
 	color: red;
 }
 
-table#example {
-    border-collapse: collapse;   
-}
 #medications-table tr {
     background-color: #eee;
     border-top: 1px solid #fff;
 }
+
 #medications-table tr:hover {
     background-color: #ccc;
 }
+
 #medications-table th {
     background-color: #fff;
 }
+
 #medications-table th, #example td {
     padding: 3px 5px;
 }
+
 #medications-table td:hover {
     cursor: pointer;
 }
