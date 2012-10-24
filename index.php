@@ -5,18 +5,11 @@
 <body>
 <div class="foo">
     <?
-        $result = $mysqli->query("SELECT * FROM books");
+        $result = $mysqli->query("SELECT * FROM md_medicationdata");
         while ($row = $result->fetch_assoc()) { ?>
         	<div class="book">
-        		<div class="book-title"><? echo $row['title']; ?></div>
-        		<div class="book-author"><? echo $row['author']; ?></div>
-        		<div class="book-stock <?
-        			if ($row['inventory'] > 0) {
-  						printf('book-instock">In stock (%d)', $row['inventory']);
-        			} else {
-        				echo 'book-nostock">Out of stock';
-        			}
-        		?></div>
+        		<div class="book-title"><? echo $row['mdataBrand']; ?></div>
+        		<div class="book-author"><? echo $row['mdataName']; ?></div>
         	</div>
         <? }
     ?>
