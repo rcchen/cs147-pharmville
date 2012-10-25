@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-startup-image" href="startup.png" /> 
+		<!--<link rel="apple-touch-startup-image" sizes="640x960" href="startup@2x.png" />-->
+		<meta name="apple-mobile-web-app-capable" content="yes" />  
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />  
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.7.3/build/cssreset/cssreset-min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Test</title>
+		<style>
+			
+			html {
+				height: 100%;
+				font-family: sans-serif;
+			}
+			
+			body {
+				background-color: #9FC2D6;
+				height: 100%;
+				width: 100%;
+			}
+
+			#content {
+				padding: 10px;
+			}
+
+			#footer {
+				background-color: #86B4CF;
+				position: absolute;
+				bottom: 0px;
+				width: 100%;
+			}
+			
+			.footer-icon {
+				display: inline-block;
+				position: relative;
+			}
+
+			.footer-icon-selected {
+				position: absolute;
+				bottom: 0px;
+				width: 35px;
+				height: 3px;
+				background-color: #FFF;
+				left: 11px;
+			}
+
+			img {
+				height: 35px;
+				width: 35px;
+				padding: 7px 10px 0px 10px;
+				margin-bottom: 3px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			This is the home screen.
+		</div>
+		<div id="footer">
+			<div class="footer-icon">
+				<a href="index.php">
+				<img src="house.png" />
+				<div class="footer-icon-selected" />
+				</a>
+			</div>
+			<div class="footer-icon">
+				<img src="gears.png" />
+			</div>
+			<div class="footer-icon">
+				<img src="pill.png" />
+			</div>
+		</div>
+	</body>
+</html>

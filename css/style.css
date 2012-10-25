@@ -1,6 +1,5 @@
 html {
 	font-family: sans-serif;
-	background-image:url('../img/grid.png');
 }
 
 h1 {
@@ -21,6 +20,10 @@ h1 {
 	text-align: center;
 	margin-top: 10px;
 	color: white;
+}
+
+#content {
+    background-image:url('../img/grid.png');
 }
 
 .foo {
@@ -86,3 +89,85 @@ h1 {
 .med-name, .med-alarm, .med-alarm-button {
 	padding: 10px;	
 }
+
+/* BELOW IS ROGER'S BLUE DAY THEME */
+
+html {
+	height: 100%;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: #9FC2D6;
+	height: 100%;
+	width: 100%;
+}
+
+.content {
+	padding: 10px;
+}
+
+#footer {
+	background-color: #86B4CF;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+
+.footer-icon {
+	display: inline-block;
+	position: relative;
+}
+
+.footer-icon-selected {
+	position: absolute;
+	bottom: 0px;
+	width: 35px;
+	height: 3px;
+	background-color: #FFF;
+	left: 9px;
+}
+
+img {
+	height: 35px;
+	width: 35px;
+	padding: 7px 10px 0px 10px;
+	margin-bottom: 3px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 98%;
+}
+
+#medications-title {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.medication {
+	background-color: #86B4CF;
+	padding: 10px;
+	border-top: 1px solid #B8D0DE;
+	border-bottom: 1px solid #B8D0DE;
+}
+
+.medication-brand {
+	font-size: 1.1em;
+}
+
+.medication-description {
+	font-size: 0.8em;
+}
+
+.medication:first-child {
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 1px solid #B8D0DE;
+}
+
+.medication:last-child {
+	border-radius: 0px 0px 5px 5px;
+	border-top: 1px solid #B8D0DE;
+}
+
+/* END BLUE DAY */

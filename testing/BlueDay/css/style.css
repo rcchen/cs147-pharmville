@@ -1,0 +1,64 @@
+html {
+	height: 100%;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: #9FC2D6;
+	height: 100%;
+	width: 100%;
+}
+
+.content {
+	padding: 10px;
+}
+
+#footer {
+	background-color: #86B4CF;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+.footer-icon {
+	display: inline-block;
+	position: relative;
+}
+
+.footer-icon-selected {
+	position: absolute;
+	bottom: 0px;
+	width: 35px;
+	height: 3px;
+	background-color: #FFF;
+	left: 9px;
+}
+
+img {
+	height: 35px;
+	width: 35px;
+	padding: 7px 10px 0px 10px;
+	margin-bottom: 3px;
+}
+
+#medications-container {
+	margin: 0 auto;
+	width: 95%;
+}
+
+.medication {
+	background-color: #86B4CF;
+	padding: 10px;
+	border-top: 1px solid #73A2BD;
+	border-bottom: 1px solid #73A2BD;
+}
+
+.medication:first-child {
+	border-radius: 10px 10px 0px 0px;
+	border-bottom: 1px solid #73A2BD;
+}
+
+.medication:last-child {
+	border-radius: 0px 0px 10px 10px;
+	border-top: 1px solid #73A2BD;
+}
