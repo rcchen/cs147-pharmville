@@ -17,6 +17,7 @@
 		</div>
 	</body>
 	<script>
+
 		$('a').live('click', function(event) {
 			event.preventDefault();
 			window.location = $(this).attr('href');
@@ -25,10 +26,12 @@
 		$(document).ready(function() {
 			var curPage = $('.content').attr('id');
 			$('.footer-icon').each(function() {
-				if ($(this).attr('id') == curPage) {
+				if ($(this).attr('id').indexOf(curPage) != -1) {
 					$(this).append('<div class="footer-icon-selected">');
 				}
 			});
 		});
+
+
 	</script>
 </html>

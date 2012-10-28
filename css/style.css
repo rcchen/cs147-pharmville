@@ -117,7 +117,7 @@ a:visited {
 }
 
 #footer {
-	background-color: #86B4CF;
+	background-color: #6792AB;
 	position: fixed;
 	bottom: 0px;
 	width: 100%;
@@ -144,10 +144,20 @@ img {
 	margin-bottom: 3px;
 }
 
+.home-title {
+	font-size: 1.2em;
+}
+
+.home-description {
+	margin: 10px 0px;
+	font-size: 0.9em;
+}
+
 .container {
 	margin: 0 auto;
 	width: 98%;
 	margin-bottom: 55px;
+	position: relative;
 }
 
 #medications-title {
@@ -155,11 +165,24 @@ img {
 	font-weight: bold;
 }
 
+#add-med-button {
+	margin-bottom: 10px;
+}
+
+.circle {
+	border-radius: 100px;
+	border: 100px solid #CCC;
+	width: 1px;
+	text-align: center;
+}
+
 .medication {
 	background-color: #86B4CF;
 	padding: 10px;
 	border-top: 1px solid #B8D0DE;
 	border-bottom: 1px solid #B8D0DE;
+	height: 37px;
+	position: relative;
 }
 
 .medication-brand {
@@ -168,6 +191,12 @@ img {
 
 .medication-description {
 	font-size: 0.8em;
+}
+
+.medication-alarm {
+	position: absolute;
+	top: 13px;
+	right: 10px;
 }
 
 .medication:first-child {
