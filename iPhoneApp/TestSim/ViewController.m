@@ -19,7 +19,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    NSString *site = @"http://corgiland.com/cs147/";
+    NSString *site = @"http://cs147.adamantinelabs.com/";
     NSURL *url = [NSURL URLWithString:site];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     

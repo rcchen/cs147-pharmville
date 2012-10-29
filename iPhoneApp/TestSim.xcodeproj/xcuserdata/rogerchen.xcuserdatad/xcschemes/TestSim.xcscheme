@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "330FA3871623872C006810F6"
-               BuildableName = "TestSim.app"
+               BuildableName = "Pharmville.app"
                BlueprintName = "TestSim"
                ReferencedContainer = "container:TestSim.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "330FA3871623872C006810F6"
-            BuildableName = "TestSim.app"
+            BuildableName = "Pharmville.app"
             BlueprintName = "TestSim"
             ReferencedContainer = "container:TestSim.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "330FA3871623872C006810F6"
-            BuildableName = "TestSim.app"
+            BuildableName = "Pharmville.app"
             BlueprintName = "TestSim"
             ReferencedContainer = "container:TestSim.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "330FA3871623872C006810F6"
-            BuildableName = "TestSim.app"
+            BuildableName = "Pharmville.app"
             BlueprintName = "TestSim"
             ReferencedContainer = "container:TestSim.xcodeproj">
          </BuildableReference>
