@@ -4,7 +4,10 @@
 		<h1>Home</h1>
 	</div><!-- /header -->
 	<div data-role="content" class="sp-content" id="sp-home">	
-		<p>Hello world</p>		
+		<p>Hello world</p>	
+		<div class="sp-circle-main">
+			<div class="sp-circle-text">Testing</div>
+		</div>	
 	</div><!-- /content -->
 	<div data-role="footer" data-position="fixed" data-tap-toggle="false">
 		<div id="index" class="footer-icon">
@@ -15,6 +18,11 @@
 		<div id="medications" class="footer-icon">
 			<a href="medications.php">
 			<img src="img/icons/pill.png" />
+			</a>
+		</div>
+		<div id="library" class="footer-icon">
+			<a href="library.php">
+			<img src="img/icons/cabinet.png" />
 			</a>
 		</div>
 		<div id="settings" class="footer-icon">

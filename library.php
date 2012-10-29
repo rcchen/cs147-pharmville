@@ -1,24 +1,25 @@
 <? include_once('header.php'); ?>
 <div data-role="page">
 	<div data-role="header" data-tap-toggle="false">
-		<h1>Settings</h1>
+		<h1>Library</h1>
 	</div><!-- /header -->
-	<div data-role="content" class="sp-content" id="sp-settings">	
-		<ul data-role="listview" data-inset="true">
-			<li><a href="#">My Password</a></li>
-			<li><a href="#">My Email Address</a></li>
-			<li><a href="#">Export Information</a></li>
-			<li><a href="#">Vibrate Mode</a></li>
-			<li><a href="#">Sounds</a></li>
-		</ul>	
+	<div data-role="content" class="sp-content" id="sp-library">	
+		<ul data-role="listview">
+		<? $result = $mysqli->query("SELECT * FROM md_medicationdata");
+		while ($row = $result->fetch_assoc()) { ?>
+			<li>
+				<a data-transition="slide" href="medication.php?id=<? echo $row['mdataId']; ?>"><? echo $row['mdataBrand']; ?></a>
+			</li>
+		<? } ?>
+		</ul>
 	</div><!-- /content -->
 	<div data-role="footer" data-position="fixed" data-tap-toggle="false">
-		<div id="sp-home" class="footer-icon">
+		<div id="index" class="footer-icon">
 			<a href="index.php">
 			<img src="img/icons/house.png" />
 			</a>
 		</div>
-		<div id="sp-medications" class="footer-icon">
+		<div id="medications" class="footer-icon">
 			<a href="medications.php">
 			<img src="img/icons/pill.png" />
 			</a>
@@ -28,11 +29,10 @@
 			<img src="img/icons/cabinet.png" />
 			</a>
 		</div>
-		<div id="sp-settings" class="footer-icon">
+		<div id="settings" class="footer-icon">
 			<a href="settings.php">
 			<img src="img/icons/gears.png" />
 			</a>
 		</div>
 	</div><!-- /footer -->
-</div><!-- /page -->
 <? include_once('footer.php'); ?>

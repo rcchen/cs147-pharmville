@@ -24,6 +24,11 @@
 			<img src="img/icons/pill.png" />
 			</a>
 		</div>
+		<div id="library" class="footer-icon">
+			<a href="library.php">
+			<img src="img/icons/cabinet.png" />
+			</a>
+		</div>
 		<div id="settings" class="footer-icon">
 			<a href="settings.php">
 			<img src="img/icons/gears.png" />
