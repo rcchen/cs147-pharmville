@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.2.0.css" />
+	<link rel="stylesheet" href="css/spring-shine.css" />
+	<link rel="stylesheet" href="css/spring-additional.css" />
+	<script src="js/jquery-1.8.2.js"></script>
+	<script src="js/jquery.mobile-1.2.0.js"></script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Home</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" class="sp-content" id="sp-home">	
+		<p>Hello world</p>		
+	</div><!-- /content -->
+
+
+	<div data-role="footer" data-position="fixed">
+		<div id="sp-home" class="footer-icon">
+			<a href="index.php">
+			<img src="img/icons/house.png" />
+			</a>
+		</div>
+		<div id="sp-medications" class="footer-icon">
+			<a href="medications.php">
+			<img src="img/icons/pill.png" />
+			</a>
+		</div>
+		<div id="sp-settings" class="footer-icon">
+			<a href="settings.php">
+			<img src="img/icons/gears.png" />
+			</a>
+		</div>
+	</div><!-- /footer -->
+
+	<script>
+
+		$(document).ready(function() {
+			var curPage = $('.sp-content').attr('id');
+			$('.footer-icon').each(function() {
+				if ($(this).attr('id').indexOf(curPage) != -1) {
+					$(this).append('<div class="footer-icon-selected">');
+				}
+			});
+		});
+
+
+	</script>
+
+</div><!-- /page -->
+
+</body>
+</html>
