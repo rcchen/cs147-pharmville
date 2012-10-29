@@ -1,0 +1,20 @@
+.footer-icon {
+	display: inline-block;
+	position: relative;
+	height: 42px;
+}
+
+.footer-icon img {
+	margin: 5px 15px 0px 15px;
+	width: 30px;
+	height: 30px;
+}
+
+.footer-icon-selected {
+	position: absolute;
+	bottom: 0px;
+	width: 30px;
+	height: 3px;
+	background-color: #FFF;
+	left: 15px;
+}
