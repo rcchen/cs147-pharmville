@@ -1,37 +1,19 @@
-		<div id="footer">
-			<div id="home" class="footer-icon">
-				<a href="index.php">
-				<img src="img/icons/house.png" />
-				</a>
-			</div>
-			<div id="medications" class="footer-icon">
-				<a href="medications.php">
-				<img src="img/icons/pill.png" />
-				</a>
-			</div>
-			<div id="settings" class="footer-icon">
-				<a href="settings.php">
-				<img src="img/icons/gears.png" />
-				</a>
-			</div>
-		</div>
-	</body>
-	<script>
-
-		$('a').live('click', function(event) {
-			event.preventDefault();
-			window.location = $(this).attr('href');
+</body>
+<script>
+	/*$('.footer-icon').click(function() {
+		$.get($(this).attr('id') + '.php', function(data) {
+			console.log(data);
 		});
-
-		$(document).ready(function() {
-			var curPage = $('.content').attr('id');
-			$('.footer-icon').each(function() {
-				if ($(this).attr('id').indexOf(curPage) != -1) {
-					$(this).append('<div class="footer-icon-selected">');
-				}
-			});
+	});*/
+	/*$(document).delegate('.ui-page', 'pageshow', function () {
+		console.log('triggered');
+		var curPage = $('.sp-content').attr('id');
+		$('.footer-icon').each(function() {
+			console.log($(this).attr('id') + curPage);
+			if ($(this).attr('id').indexOf(curPage) != -1) {
+				$(this).append('<div class="footer-icon-selected"></div>');
+			}
 		});
-
-
-	</script>
+	});*/
+</script>
 </html>
