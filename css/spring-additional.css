@@ -21,6 +21,10 @@
 	left: 15px;
 }
 
+.footer-icon .ui-btn .ui-btn-inner {
+	margin-left: -20px;
+}
+
 .ui-icon-home-footer {
 	background: url(../img/icons/house.png) no-repeat;
 	background-position: center;      
@@ -43,8 +47,8 @@
     margin-top:0px;
 }
 
-.ui-icon-cabinet-footer {
-	background: url(../img/icons/cabinet.png) no-repeat;
+.ui-icon-library-footer {
+	background: url(../img/icons/library.png) no-repeat;
 	background-position: center;      
     -moz-border-radius:0px;
     -webkit-border-radius:0px;
