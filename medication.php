@@ -6,7 +6,9 @@
 ?>
 <div data-role="page">
 	<div data-role="header">
+		<a data-icon="arrow-l" data-mini="true" data-transition="slide" data-direction="reverse" href="medications.php">Back</a>
 		<h1><? echo $row['mdataBrand']; ?></h1>
+		<a data-icon="gear" data-mini="true" href="#">Edit</a>
 	</div><!-- /header -->
 	<div data-role="content" class="sp-content" id="sp-home">
 		<p>Also known as <? echo $row['mdataName']; ?></p>
@@ -19,33 +21,25 @@
 				<li><? echo $effect; ?></li>
 			<?}?>
 		</ul>
-		<a id="add-med-button" data-role="button" href="#">Edit Medication</a>
-		<a data-role="button" data-theme="b" data-transition="slide" data-direction="reverse" href="medications.php">Back to medications</a>
 	</div><!-- /content -->
-	<div data-role="footer" data-position="fixed" data-tap-toggle="false">
-		<div id="index" class="footer-icon">
-			<a href="index.php">
-			<img src="img/icons/house.png" />
-			</a>
+
+	<div data-role="footer" id="footer-id" data-id="footer" data-position="fixed" data-theme="b">
+		<div data-role="navbar" data-theme="b">
+			<ul>
+				<li><a href="index.php" data-icon="home-footer"></a></li>
+				<li><a href="medications.php" data-icon="med-footer" class="ui-btn-active ui-state-persist"></a></li>
+				<li><a href="library.php" data-icon="cabinet-footer"></a></li>
+				<li><a href="settings.php" data-icon="settings-footer"></a></li>
+			</ul>
 		</div>
-		<div id="medications" class="footer-icon">
-			<a href="medications.php">
-			<img src="img/icons/pill.png" />
-			</a>
-		</div>
-		<div id="settings" class="footer-icon">
-			<a href="settings.php">
-			<img src="img/icons/gears.png" />
-			</a>
-		</div>
-	</div><!-- /footer -->
+	</div>
+	
 </div><!-- /page -->
 <script>
 	$('#add-med-button').click(function() {
 		alert('Not implemented yet!');
 	});
 </script>
-<? include_once('footer.php'); ?>
 
 
 <!--<? include_once('header.php'); ?>

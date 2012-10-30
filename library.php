@@ -13,26 +13,16 @@
 		<? } ?>
 		</ul>
 	</div><!-- /content -->
-	<div data-role="footer" data-position="fixed" data-tap-toggle="false">
-		<div id="index" class="footer-icon">
-			<a href="index.php">
-			<img src="img/icons/house.png" />
-			</a>
+
+	<div data-role="footer" id="footer-id" data-id="footer" data-position="fixed" data-theme="b">
+		<div data-role="navbar" data-theme="b">
+			<ul>
+				<li><a href="index.php" data-icon="home-footer"></a></li>
+				<li><a href="medications.php" data-icon="med-footer"></a></li>
+				<li><a href="library.php" data-icon="cabinet-footer" class="ui-btn-active ui-state-persist"></a></li>
+				<li><a href="settings.php" data-icon="settings-footer"></a></li>
+			</ul>
 		</div>
-		<div id="medications" class="footer-icon">
-			<a href="medications.php">
-			<img src="img/icons/pill.png" />
-			</a>
-		</div>
-		<div id="library" class="footer-icon">
-			<a href="library.php">
-			<img src="img/icons/cabinet.png" />
-			</a>
-		</div>
-		<div id="settings" class="footer-icon">
-			<a href="settings.php">
-			<img src="img/icons/gears.png" />
-			</a>
-		</div>
-	</div><!-- /footer -->
-<? include_once('footer.php'); ?>
+	</div>
+
+</div><!-- /page -->
