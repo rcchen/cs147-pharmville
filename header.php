@@ -16,9 +16,9 @@
 		<!-- END FOR APPLE iOS -->
 	
 		<!-- ALL OF OUR JS AND CSS -->
-		<link rel="stylesheet" href="css/jquery.mobile.structure-1.2.0.css" />
 		<link rel="stylesheet" href="css/spring-shine.css" />
 		<link rel="stylesheet" href="css/spring-additional.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.2.0.css" />
 		<script src="js/jquery-1.8.2.js"></script>
 		<script src="js/jquery.mobile-1.2.0.js"></script>
 		<!-- END JS AND CSS -->

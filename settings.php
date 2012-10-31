@@ -16,12 +16,41 @@
 		<p><? echo $_SESSION['email']; ?></p>
 		<? } else { ?>
 		<p>Please login to edit your settings and access personalized information.</p>
-		<form>	<!-- TODO: Javascript to prevent default action -->
-			<input type="text" name="userEmail" id="basic" placeholder="email" value=""  />
-			<input type="password" name="userPassword" id="basic" placeholder="password" value="" />
-			<input type="submit" value="submit" />
+		<form id="login-form">	<!-- TODO: Javascript to prevent default action -->
+			<input type="text" name="userEmail" id="userEmail" placeholder="email" value=""  />
+			<input type="password" name="userPassword" id="userPassword" placeholder="password" value="" />
+			<input type="submit" id="login-submit" value="submit" />
 		</form>
 		<p>Don't have an account? <a href="register.php" data-transition="slide">Register now.</a></p>
+		<div id="login-feedback" class="spring-hide"></div>
 		<? } ?>
 	</div><!-- /content -->
+	<script>
+
+		function onSuccess(data, status) {
+			$('#login-feedback').html(data);
+			$('#login-feedback').toggleClass('spring-hide');
+			if (data.indexOf("Successful login!") != -1) {
+				location.reload();	
+			}
+		}
+
+		function onError(data, status) {
+			console.log("Error: " + data + " " + status);
+		}
+
+		$('#login-submit').click(function() {
+			var formData = $('#login-form').serialize();
+			$.ajax({
+				type: "POST",
+				url: "functions/login-user.php",
+				cache: false,
+				data: formData,
+				success: onSuccess,
+				error: onError
+			});
+			return false;
+		});
+		
+	</script>
 <? include_once('footer.php'); ?>

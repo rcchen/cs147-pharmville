@@ -21,6 +21,13 @@
 			curPageLink.removeClass('ui-state-persist');
 		});		
 	});*/
+	$(document).delegate('.ui-page', 'pagebeforeload', function () {
+		console.log('now');
+		var activePage = $('.ui-page-active');
+		activePage.find('span.ui-icon').each(function() {
+			$(this).removeClass('ui-icon-shadow');
+		});		
+	});
 	$(document).delegate('.ui-page', 'pageshow', function () {
 		var activePage = $('.ui-page-active');
 		var activePageId = activePage.find('.ui-content').attr('id') + '-footer';
