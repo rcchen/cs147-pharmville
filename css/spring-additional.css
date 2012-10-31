@@ -1,3 +1,7 @@
+.spring-hide {
+	display: none;
+}
+
 /* FOOTER STYLES */
 
 .footer-icon {
@@ -151,3 +155,41 @@
 	text-decoration:none;
 	background:#333;
 }
+
+/* HOME SCREEN STYLE */
+.main-alarm {
+	width: 93%;
+	border: 1px solid #CCC;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.addl-alarm {
+	margin-top: 10px;
+	width: 93%;
+	border: 1px solid #CCC;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.addl-medication {
+	font-size: 0.8em;
+}
+
+.addl-nexttime {
+	font-size: 0.8em;
+}
+
+.main-medication {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.main-nexttime {
+	font-size: 0.9em;
+}
+
+.main-lasttime {
+	font-size: 0.9em;
+}
+

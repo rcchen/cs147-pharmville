@@ -60,8 +60,9 @@ function showCurrentTime() {
 </script>
 <div data-role="page">
 	<div data-role="header" data-tap-toggle="false">
-		<h1>Welcome Home!</h1>
+		<h1>Home</h1>
 	</div><!-- /header -->
+<<<<<<< HEAD
 	<div data-role="content" class="sp-content" id="home">
 		<div class="sp-circle-small">Tylenol</div>
 		<div class="sp-circle-med">Zocor</div>
@@ -70,5 +71,24 @@ function showCurrentTime() {
 		<div class="sp-circle-med">Zoloft</div>
 		<div class="sp-circle-small">Vicodin</div>
 		</div>	
+=======
+	<div data-role="content" class="sp-content" id="home">	
+		<div class="main-alarm">
+			<div class="main-medication">Vicodin</div>
+			<div class="main-nexttime">12:45PM</div>
+			<div class="main-lasttime">Last taken two hours ago</div>
+		</div>
+		<div class="addl-alarm">
+			<div class="addl-medication">Zocor</div>
+			<div class="addl-nexttime">1:15PM</div>
+		</div>
+		<div class="addl-alarm">
+			<div class="addl-medication">Zocor</div>
+			<div class="addl-nexttime">1:15PM</div>
+		</div>
+		<!--<div class="sp-circle-main">
+			<div class="sp-circle-text">Testing</div>
+		</div>-->	
+>>>>>>> ec05a39fab81e0a81028f2137fc8e39eaea60c63
 	</div><!-- /content -->
 <? include_once('footer.php'); ?>

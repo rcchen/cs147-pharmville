@@ -24,4 +24,6 @@
         exit();
     }
 
+    session_start();
+
 ?>	
