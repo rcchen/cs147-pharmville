@@ -102,15 +102,52 @@
 
 /* VARIOUS CIRCLES */
 .sp-circle-main {
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-	background-color: #CCC;
-	position: relative;
+	width:160px;
+	height:160px;
+	border-radius:80px;
+	font-size:20px;
+	color:#fff;
+	line-height:160px;
+	text-align:center;
+	background:#f8ce4d;
+	margin-left:auto;
+	margin-right:auto;
+	vertical-align: middle;
 }
 
-.sp-circle-text {
-	position: absolute;
-	left: 37%;
-	top: 45%;
+.sp-circle-med {
+	width:100px;
+	height:100px;
+	border-radius:50px;
+	font-size:14px;
+	color:#fff;
+	line-height:100px;
+	text-align:center;
+	background:#285b78;
+	position: relative;
+	left: 100px;
+}
+.sp-circle-med:hover {
+	color:#ccc;
+	text-decoration:none;
+	background:#333;
+}
+
+.sp-circle-small {
+	width:80px;
+	height:80px;
+	border-radius:40px;
+	font-size:14px;
+	color:#fff;
+	line-height:80px;
+	text-align:center;
+	background:#94c7e4;
+	position: relative;
+	left: 50px;
+}
+
+.sp-circle-small:hover {
+	color:#ccc;
+	text-decoration:none;
+	background:#333;
 }
