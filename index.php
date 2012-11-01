@@ -1,94 +1,35 @@
 <? include_once('header.php'); ?>
-<?php
-#Need to specify that this is an XML document in order for it to work with AJAX
-header('Content-Type: text/xml');
-
-#Set variables equal to each part of the date and time
-$year = date("Y"); 
-$mon = date("m");
-$mday = date("d");
-$hour = date("H");
-$min = date("i");
-$sec = date("s");
-
-#Create the XML document of the current date and time
-echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
-echo '<currentDateTime>' . "\n";
-echo "\t" . '<year>' . $year . '</year>' . "\n";
-echo "\t" . '<month>' . $mon . '</month>' . "\n";
-echo "\t" . '<day>' . $mday . '</day>' . "\n";
-echo "\t" . '<hour>' . $hour . '</hour>' . "\n";
-echo "\t" . '<min>' . $min . '</min>' . "\n";
-echo "\t" . '<sec>' . $sec . '</sec>' . "\n";
-echo '</currentDateTime>' . "\n";
-?>
-				
-<script language="JavaScript">
-<!--
-//Once the document is loaded, execute the showCurrentTIme function
-//This is the AJAX function that displays the current time on the screen.
-$(document).ready(function(){ showCurrentTime(); });	
-
-function showCurrentTime() {
-	//Call the current time web service,
-	//grab the time off the server, and apply it to the 
-	//end-user client after waiting for the document to load
-	$(document).ready(function() {
-
-		//Make the call to the XML web service
-		$.get("currentDateTime.php", function(currentDateTime) {
-
-			//Format the time returned by the server
-			var time = [ $("hour", currentDateTime).text(), 
-			":", 
-			$("min", currentDateTime).text() ];
-
-			//Determine how many milliseconds to will wait until 
-			//the time needs to be refreshed again
-			var refresh = [(60 - $("sec", currentDateTime).text()) * 1000 ];
-
-			//Display the time on the end-user client
-			$("#currentTime").html(time.join(''));
-
-			//Set a timer so that the time on the end-user client updates 
-			// in sync with the server time to display the true current time
-			setTimeout('showCurrentTime()', refresh);
-		});
-	});
-}
--->
-</script>
 <div data-role="page">
 	<div data-role="header" data-tap-toggle="false">
 		<h1>Home</h1>
 	</div><!-- /header -->
-<<<<<<< HEAD
 	<div data-role="content" class="sp-content" id="home">
-		<div class="sp-circle-small">Tylenol</div>
-		<div class="sp-circle-med">Zocor</div>
-		<div class="sp-circle-main"><p id="currentTime">--:--</p>
+		<div class="sp-circle-small"><br><br>Tylenol<br>2:15PM</div>
+		<div class="sp-circle-med"><br><br>Zocor<br>1:00PM</div>
+		<div class="sp-circle-main">
+
+		<script type="text/javascript">
+	<!--
+	var currentTime = new Date()
+	var hours = currentTime.getHours()
+	var minutes = currentTime.getMinutes()
+	if (minutes < 10){
+	minutes = "0" + minutes
+	}
+	if(hours >= 13)
+		hours = hours - 12;
+	document.write(hours + ":" + minutes + " ")
+	if(hours > 11){
+	document.write("PM")
+	} else {
+	document.write("AM")
+	}
+	//-->
+	</script>
+
 		</div>
-		<div class="sp-circle-med">Zoloft</div>
-		<div class="sp-circle-small">Vicodin</div>
+		<div class="sp-circle-med"><br><br>Zoloft<br>11:30AM</div>
+		<div class="sp-circle-small"><br><br>Vicodin<br>9:00AM</div>
 		</div>	
-=======
-	<div data-role="content" class="sp-content" id="home">	
-		<div class="main-alarm">
-			<div class="main-medication">Vicodin</div>
-			<div class="main-nexttime">12:45PM</div>
-			<div class="main-lasttime">Last taken two hours ago</div>
-		</div>
-		<div class="addl-alarm">
-			<div class="addl-medication">Zocor</div>
-			<div class="addl-nexttime">1:15PM</div>
-		</div>
-		<div class="addl-alarm">
-			<div class="addl-medication">Zocor</div>
-			<div class="addl-nexttime">1:15PM</div>
-		</div>
-		<!--<div class="sp-circle-main">
-			<div class="sp-circle-text">Testing</div>
-		</div>-->	
->>>>>>> ec05a39fab81e0a81028f2137fc8e39eaea60c63
 	</div><!-- /content -->
 <? include_once('footer.php'); ?>
